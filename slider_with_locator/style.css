@@ -1,0 +1,109 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+
+.slider-container > div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    overflow: hidden;
+}
+
+.slider-container > div > img {
+    width: 100%;
+}
+
+.handles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;    
+}
+
+.nav-btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-btns > div {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+@keyframes come-in {
+    from {left : 100%;}
+    to {left : 0px;}
+}
+
+@-webkit-keyframes come-in {
+   from {left : 100%;}
+    to {left : 0px;}
+}
+
+@keyframes come-out {
+    from {left : 0px;}
+    to {left : -100%;}
+}
+
+@-webkit-keyframes come-out {
+    from {left : 0px;}
+    to {left : -100%;}
+} 
+
+
+@keyframes back-in {
+    from {left : 0px;}
+    to {left : 100%;}
+}
+
+@-webkit-keyframes back-in {
+    from {left : 0px;}
+    to {left : 100%;}
+}
+
+
+@keyframes back-out {
+    from {left : -100%;}
+    to {left : 0px;}
+}
+
+@-webkit-keyframes back-out {
+   from {left : -100%;}
+    to {left : 0px;}
+} 
+

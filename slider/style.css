@@ -1,0 +1,80 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    position: relative;
+}
+
+.slider-container > div {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    overflow: hidden;
+}
+
+.slider-container > div> img  {
+    width: 100%;
+}
+
+@keyframes come-in {
+    from {left : 100%;}
+    to {left : 0px;}
+}
+
+@-webkit-keyframes come-in {
+   from {left : 100%;}
+    to {left : 0px;}
+}
+
+@keyframes come-out {
+    from {left : 0px;}
+    to {left : -100%;}
+}
+
+@-webkit-keyframes come-out {
+    from {left : 0px;}
+    to {left : -100%;}
+} 
+
+
+@keyframes back-in {
+    from {left : 0px;}
+    to {left : 100%;}
+}
+
+@-webkit-keyframes back-in {
+    from {left : 0px;}
+    to {left : 100%;}
+}
+
+
+@keyframes back-out {
+    from {left : -100%;}
+    to {left : 0px;}
+}
+
+@-webkit-keyframes back-out {
+   from {left : -100%;}
+    to {left : 0px;}
+} 
+
